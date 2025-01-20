@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: luxembourg-population-api
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: luxembourg-population-api
+  template:
+    metadata:
+      labels:
+        app: luxembourg-population-api
+    spec:
+      containers:
+      - name: luxembourg-population-api
+        image: luxembourg-population-api
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 8000
