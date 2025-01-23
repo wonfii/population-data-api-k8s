@@ -1,6 +1,3 @@
-
-Video: https://youtu.be/Y89Z94jIUfM
-
 All the commands I use: 
 
 minikube start --driver=docker
